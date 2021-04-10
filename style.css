@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: #e6e6e6;
+    color: #161616;
+    font-family: 'Harmond';
+
+}
+.container{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    padding: 0px 100px;
+    flex-direction: column;
+    height: 100vh;
+}
+.container .txt-line{
+    overflow: hidden;
+    margin-top: 20px ;
+}
+.container .txt-line p{
+    font-size: 40px;
+    text-transform: lowercase;
+    overflow: hidden;
+    font-weight: lighter;
+}

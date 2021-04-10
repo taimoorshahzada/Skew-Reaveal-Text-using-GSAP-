@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skew Reaveal Text using GSAP || HTML CSS & JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="txt-line">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+          ducimus.
+        </p>
+      </div>
+      <div class="txt-line">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tempore
+          dolor aliquid sunt, dignissimos assumenda.
+        </p>
+      </div>
+      <div class="txt-line">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+          aspernatur.
+        </p>
+      </div>
+      <div class="txt-line">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+          voluptates.
+        </p>
+      </div>
+      <div class="txt-line">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, odit.
+        </p>
+      </div>
+    </div>
+    <script>
+        const tl = gsap.timeline();
+        tl.from(".txt-line p",{
+            duration: 1.8,
+            delay: 1,
+            y: 200,
+            skewY: 10,
+            stagger: {
+                amount: .4
+            },
+            
+            ease: "power4.out"
+        });
+
+        
+    </script>
+  </body>
+</html>
